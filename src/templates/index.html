@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% for post in posts %}
+
+<section>
+
+    <h3 class="post-title">{{ post.titulo }}</h3>
+
+    <p class="date">Publicado em: {{ post.tempo.strftime('%d/%m/%Y') }}</p>
+    
+    <p>{{ post.texto }}</p>
+
+    <form class="delete-button" action="{{ url_for('apagar') }}" method="POST">
+        <button class='width: 100px; height: 60px;' value="{{ post.id }}" name="post_id">Excluir Post</button>
+    </form>
+
+</section>
+
+{% endfor %}
+{% endblock %}

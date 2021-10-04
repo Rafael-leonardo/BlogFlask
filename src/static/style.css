@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+ul li, p{
+	font-size: 2rem;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.main-head{
+	background: #ff2929;
+	color: white;
+}
+nav{
+	min-height: 10vh;
+	display: flex;
+	width: 100%;
+	margin: auto;
+	padding: 2rem;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 20rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+#logo{
+	flex: 3 1 50rem;
+}
+
+body{
+	background-color: #2d2f31;
+}
+
+section{
+	margin: 5vh auto;
+	width: 70%;
+	height: auto;
+	border: 2px solid rgb(255, 0, 0);
+	border-radius: 10px;
+	background-color: #d6d4d4;
+}
+.post-title{
+	font-size: 2.5rem;
+	margin: 10px auto 0px;
+	padding: 10px;
+
+}
+.date{
+	font-size: 1.6rem;
+	padding-top: 0;
+	color: grey;
+}
+p{
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+
+}
+
+.delete-button{
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+h2{
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 5vh;
+	color: rgb(231, 218, 218) ;
+}
+
+form{
+	margin: 5vh auto;
+	width: 320px;
+	color: rgb(114, 166, 209);
+
+}
+
+input{
+	padding: 10px;
+	font-size: 1.6rem;
+}
+
+.login-form input{
+	display: block;
+	margin-top: 25px;
+	width: 100%;
+	border: 2px solid #c9c4c4;
+	border-radius: 5px;
+	background-color: rgb(221, 221, 221);
+}
+.login-form input[type="submit"]{
+
+	border: none;
+	background-color: #0073ff;
+	color: rgb(255, 255, 255);
+	font-size: 1.8rem;
+}
+
+li{
+
+	margin-top: 0;
+	margin-left: 15px;
+	color: red;
+}
+
+textarea{
+	display: block;
+	margin-top: 25px;
+	border: 2px solid #868686;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	font-family: sans-serif;
+	background-color: rgb(221, 221, 221);
+}

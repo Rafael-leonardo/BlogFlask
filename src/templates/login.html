@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form action="{{ url_for('login') }}" method="POST">
+    <input type="email" name='usuario' placeholder="Digite o seu e-mail:">
+    <input type="password" name='senha' placeholder="Digite a sua senha:">
+    <button>Entrar</button>
+</form>
+
+{% endblock %}

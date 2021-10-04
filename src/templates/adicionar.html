@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h2>Escreve o seu novo Post:</h2>
+
+<form class="login-form" action="{{ url_for('CriarPost') }}" method="POST">
+    <input type="text" name="titulo" placeholder="Titulo">
+
+    <textarea name="texto" id="" cols="30" rows="10" placeholder='Sobre o que falaremos hoje?'></textarea>
+
+    <input type="submit" name='submit'>
+</form>
+
+{% endblock %}
